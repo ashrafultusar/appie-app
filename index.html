@@ -1,53 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-<!-- tailwind and daisy ui cdn -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind and daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
-<nav class=" bg-blue-950 h-16">
-<div class="container mx-auto text-white h-16 flex justify-between items-center">
-    <div class="flex justify-center items-center space-x-4 ">
-        <img src="./assets/logo-3.png" alt="">
-        <div class="space-x-3 text-lg font-semibold hidden lg:flex ">
-        <a class="hover:text-red-600 duration-300" href="#">Home</a>
-        <a class="hover:text-red-600 duration-300" href="#">About</a>
-        <a class="hover:text-red-600 duration-300" href="">Services</a>
-        <a class="hover:text-red-600 duration-300" href="">Blog</a>
-        <a class="hover:text-red-600 duration-300" href="">Contacts</a>
-        </div>
-    </div>
-<div class="space-x-3 hidden lg:flex">
-    <button class="hover:text-red-600 text-lg font-semibold">LOGIN</button>
-    <button class="bg-orange-700 px-4 py-2 rounded-md font-semibold text-xl border-2 border-orange-600 hover:bg-transparent duration-200 ">Get Started</button>
-</div>
-<div class="lg:hidden">
-    <img class="w-8 h-8" src="./assets/more.png" alt="">
-</div>
-</div>
-</nav>
 
-<!-- bannar section -->
-<header class="bg-blue-900 py-14 flex flex-col justify-center items-center">
-<div class="mx-auto text-white text-center space-y-4">
-    <h1 class="text-4xl lg:text-7xl font-bold">Creative way to 
-        <br>Showcase your<span class="text-orange-600">App</span> </h1>
-    <p class="opacity-70 text-xl">Your app gets maximum attention and gets more and more downloads</p>
-    <div class="space-x-4 flex justify-center items-center">
-        <button class="bg-orange-700 px-4 py-2 rounded-md font-semibold text-xl border-2 border-orange-600 hover:bg-transparent duration-200 ">Get Started</button>
-        <button class="flex gap-x-3"><img src="./assets/play-button.png" alt=""> Play Video</button>
-    </div>
-</div>
-<div class= "translate-y-32 md:translate-y-48 lg:translate-y-64">
-    <img src="./assets/hero-thumb-4.png" alt="">
-</div>
-</header>
+<body>
+    <nav class=" bg-blue-950 h-16">
+        <div class="container mx-auto text-white h-16 flex justify-between items-center">
+            <div class="flex justify-center items-center space-x-4 ">
+                <img src="./assets/logo-3.png" alt="">
+                <div class="space-x-3 text-lg font-semibold hidden lg:flex ">
+                    <a class="hover:text-red-600 duration-300" href="#">Home</a>
+                    <a class="hover:text-red-600 duration-300" href="#">About</a>
+                    <a class="hover:text-red-600 duration-300" href="">Services</a>
+                    <a class="hover:text-red-600 duration-300" href="">Blog</a>
+                    <a class="hover:text-red-600 duration-300" href="">Contacts</a>
+                </div>
+            </div>
+            <div class="space-x-3 hidden lg:flex">
+                <button class="hover:text-red-600 text-lg font-semibold">LOGIN</button>
+                <button
+                    class="bg-orange-700 px-4 py-2 rounded-md font-semibold text-xl border-2 border-orange-600 hover:bg-transparent duration-200 ">Get
+                    Started</button>
+            </div>
+            <div class="lg:hidden">
+                <img class="w-8 h-8" src="./assets/more.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <!-- bannar section -->
+    <header class="bg-blue-900 py-14 flex flex-col justify-center items-center">
+        <div class="mx-auto text-white text-center space-y-4">
+            <h1 class="text-4xl lg:text-7xl font-bold">Creative way to
+                <br>Showcase your<span class="text-orange-600">App</span>
+            </h1>
+            <p class="opacity-70 text-xl">Your app gets maximum attention and gets more and more downloads</p>
+            <div class="space-x-4 flex justify-center items-center">
+                <button
+                    class="bg-orange-700 px-4 py-2 rounded-md font-semibold text-xl border-2 border-orange-600 hover:bg-transparent duration-200 ">Get
+                    Started</button>
+                <button class="flex gap-x-3"><img src="./assets/play-button.png" alt=""> Play Video</button>
+            </div>
+        </div>
+        <div class="translate-y-32 md:translate-y-48 lg:translate-y-64">
+            <img src="./assets/hero-thumb-4.png" alt="">
+        </div>
+    </header>
+
+    <section class="my-48">
+        <div class="text-center mb-24">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold opacity-70 mb-6"> What you can do</h1>
+            <p class="w-[50%] mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa commodi accusamus,
+                molestiae, dicta vitae ullam nisi, accusantium odio aperiam modi ut laboriosam! Dicta, sint molestiae.
+            </p>
+        </div>
+
+        <div class="container mx-auto lg:px-24 px-8">
+
+            <div class="grid grid-cols-1 md:col-span-2 lg:grid-cols-4 gap-6">
+                <!-- card 1 -->
+                <div class="shadow-xl rounded-md p-8">
+                    <div class="w-20 h-20 rounded-full mx-auto bg-green-500 flex items-center justify-center">
+                        <img src="./assets/play-store.png" alt="">
+                    </div>
+
+                    <div class="text-center mt-6 space-y-3">
+                        <h6 class="text-lg font-medium opacity-70">Easy to Use</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.</p>
+                        <button>Read more...</button>
+                    </div>
+
+                </div>
+                <!-- card 2 -->
+                <div class="shadow-xl rounded-md p-8">
+                    <div class="w-20 h-20 rounded-full mx-auto bg-yellow-500 flex items-center justify-center">
+                        <img src="./assets/play-store.png" alt="">
+                    </div>
+
+                    <div class="text-center mt-6 space-y-3">
+                        <h6 class="text-lg font-medium opacity-70">Easy to Use</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.</p>
+                        <button>Read more...</button>
+                    </div>
+
+                </div>
+                <!-- card 3 -->
+                <div class="shadow-xl rounded-md p-8">
+                    <div class="w-20 h-20 rounded-full mx-auto bg-blue-500 flex items-center justify-center">
+                        <img src="./assets/play-store.png" alt="">
+                    </div>
+
+                    <div class="text-center mt-6 space-y-3">
+                        <h6 class="text-lg font-medium opacity-70">Easy to Use</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.</p>
+                        <button>Read more...</button>
+                    </div>
+
+                </div>
+                <!-- card 4 -->
+                <div class="shadow-xl rounded-md p-8">
+                    <div class="w-20 h-20 rounded-full mx-auto bg-red-500 flex items-center justify-center">
+                        <img src="./assets/play-store.png" alt="">
+                    </div>
+
+                    <div class="text-center mt-6 space-y-3">
+                        <h6 class="text-lg font-medium opacity-70">Easy to Use</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.</p>
+                        <button>Read more...</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
 
 </body>
+
 </html>
